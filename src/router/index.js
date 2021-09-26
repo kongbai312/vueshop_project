@@ -5,6 +5,8 @@ Vue.use(VueRouter)
 
 import routes from "@/router/routes"
 
+import store from "@/store"
+
 // 缓存原本的push方法
 const originalPush = VueRouter.prototype.push
 const originalReplace = VueRouter.prototype.replace
@@ -42,10 +44,66 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
     })
   }
 
+  
 
-export default new VueRouter({
+const router = new VueRouter({
     //浏览器方式
     mode:'history',
     //从routes.js中导入routes
     routes,
+    //页面跳转时，页面所处的位置
+    scrollBehavior (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
 })
+
+//导航守卫  全局前置守卫
+router.beforeEach(async (to, from, next) => {
+  //将token取过来
+  let token = store.state.user.token
+  //如果token存在
+  if(token){
+    //如果已经登录了，仍然去登录页面
+    if(to.path==='/login'){
+      //跳转至首页
+      next('/')
+    }
+    //登录过了，去其他页面，则获取用户信息
+    else{
+      //判断用户信息是否存在
+      let hasUserInfo = !!store.state.user.userInfo.nickName
+      //如果用户信息已存在
+      if(hasUserInfo){
+        //放行，继续跳转
+        next()
+      }
+      else{
+        try {
+          //发送请求,获取用户信息
+          await store.dispatch('getUserInfo')
+          //放行，继续跳转
+          next()
+        } catch (error) {
+          alert('登录超时或其他错误，请重新登录')
+          //清除token和用户信息
+          store.dispatch('resetUserInfo')
+          //跳转至登录页面，并将之前的界面存储
+          next('/login?redirect='+to.path)
+        }
+      }
+    }
+  }
+  else{
+    //当用户没有登录时，访问订单信息页面，支付相关页面，我的订单页面需要跳转至登录页面
+    if(to.path.startsWith('/trade') || to.path.startsWith('/pay') || to.path.startsWith('/center')){
+      next('/login?redirect='+to.path)
+    }
+    else{
+      next()
+    }
+  }
+})
+
+export default router
+
+

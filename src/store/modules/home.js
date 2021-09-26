@@ -5,12 +5,14 @@ import {
     reqCategoryList,    //发送请求,获取CategoryList
     reqRecommends,       //发送请求,获取Recommends 
     reqFloors,          //发送请求,获取Floors
+    reqBannerList          //发送请求获取banners
 } from '@/api'
 
 const state = {
     categoryList:[],
     recommends:[],
     floors:[],
+    banners:[]
 }
 
 const mutations = {
@@ -30,6 +32,11 @@ const mutations = {
     RECEIVE_FLOORS(state,floors){
         //将数据传到state
         state.floors = floors;
+    },
+
+    //接收轮播图数据
+    RECEIVE_BANNERS(state,banners){
+        state.banners = banners
     }
 }
 
@@ -62,7 +69,18 @@ const actions = {
         if(result.code===200){
             commit('RECEIVE_FLOORS',result.data)
         }
+    },
+
+    //获取轮播图banners
+    async getBannerList({commit}){
+        //调用封装的axios
+        const result = await reqBannerList()
+        //判断是否发送成功
+        if(result.code===200){
+            commit('RECEIVE_BANNERS',result.data)
+        }
     }
+
 }
 
 const getters = {

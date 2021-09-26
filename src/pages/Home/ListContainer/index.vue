@@ -4,17 +4,8 @@
       <div class="center">
         <!--banner轮播-->
         <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide>
-            <img src="./images/banner1.jpg" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="./images/banner2.jpg" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="./images/banner3.jpg" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="./images/banner4.jpg" />
+          <swiper-slide v-for="item in banners" :key="item.id">
+            <img :src="item.imageUrl" />
           </swiper-slide>
           <!-- 点导航 -->
           <div class="swiper-pagination" slot="pagination"></div>
@@ -97,6 +88,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "ListContainer",
   data() {
@@ -127,6 +119,16 @@ export default {
         // },
       },
     };
+  },
+  computed:{
+    //获取轮播图数据
+    ...mapState({
+      banners: state => state.home.banners
+    })
+  },
+  mounted() {
+    //发送请求，获取轮播图数据
+    this.$store.dispatch('getBannerList')
   },
 };
 </script>
@@ -202,7 +204,7 @@ export default {
           width: 25%;
 
           .list-item {
-            background-image: url(./images/icons.png);
+            background-image: url(../../../assets/images/icons.png);
             width: 61px;
             height: 40px;
             display: block;

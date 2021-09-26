@@ -12,9 +12,11 @@ import axios from "axios"
 import NProgress from "nprogress"
 import 'nprogress/nprogress.css'
 
+import store from "@/store"
+
 const service = axios.create({
-    // baseURL: 'http://182.92.128.115/api',   //基础路径
-    baseURL:'http://localhost:3000',       //json-server测试
+    baseURL: 'http://api.atguigu.cn/api',   //基础路径
+    // baseURL:'http://localhost:3000',       //json-server测试
     // baseURL:'http://localhost:7000',        //本地服务器测试
     timeout: 20000                        //超时时间
 })
@@ -24,6 +26,17 @@ service.interceptors.request.use((config)=>{
     //请求发出时，添加进度条
     NProgress.start();
 
+    //获取标识符，并添加到请求头
+    let userTempId = store.state.user.userTempId
+    if(userTempId){
+        config.headers.userTempId = userTempId
+    }
+    
+    //将token添加至请求头
+    let token = store.state.user.token
+    if(token){
+        config.headers.token = token
+    }
 
 
     return config

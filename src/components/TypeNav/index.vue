@@ -149,8 +149,23 @@ export default {
           query,
           params:this.$route.params //携带当前路由已有的params参数
         }
-        //进行路由的跳转
-        this.$router.push(location);
+        //进行路由的跳转 进行判断
+        // 问题: 在搜索界面多次跳转后, 点击返回不能一次性跳转到首页
+        // 原因: 跳转到搜索界面都是用的push
+        // 解决:
+	      //     从首页到搜索页: push()
+	      //     从搜索到搜索页: replace()
+        //判断当前的界面是否为search界面
+        if(this.$route.name === 'search'){
+          this.$router.replace(location);
+        }
+        else{
+          this.$router.push(location);
+        }
+        
+
+        //跳转后，隐藏一级分类列表
+        this.hideFirst();
       }
     },
   },

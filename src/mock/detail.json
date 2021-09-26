@@ -1,0 +1,203 @@
+{
+    "code": 200,
+    "message": "成功",
+    "data": {
+        "valuesSkuJson": "{\"3|5|7\":6,\"3|4|7\":2,\"2|4|7\":3,\"2|5|7\":4}",
+        "price": 5499,
+        "categoryView": {
+            "id": 61,
+            "category1Id": 2,
+            "category1Name": "手机",
+            "category2Id": 13,
+            "category2Name": "手机通讯",
+            "category3Id": 61,
+            "category3Name": "手机"
+        },
+        "spuSaleAttrList": [
+            {
+                "id": 1,
+                "spuId": 1,
+                "baseSaleAttrId": 1,
+                "saleAttrName": "选择颜色",
+                "spuSaleAttrValueList": [
+                    {
+                        "id": 1,
+                        "spuId": 1,
+                        "baseSaleAttrId": 1,
+                        "saleAttrValueName": "黑色",
+                        "saleAttrName": "选择颜色",
+                        "isChecked": "1"
+                    },
+                    {
+                        "id": 2,
+                        "spuId": 2,
+                        "baseSaleAttrId": 2,
+                        "saleAttrValueName": "红色",
+                        "saleAttrName": "选择颜色",
+                        "isChecked": "0"
+                    },
+                    {
+                        "id": 3,
+                        "spuId": 3,
+                        "baseSaleAttrId": 3,
+                        "saleAttrValueName": "白色",
+                        "saleAttrName": "选择颜色",
+                        "isChecked": "0"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "spuId": 1,
+                "baseSaleAttrId": 2,
+                "saleAttrName": "选择版本",
+                "spuSaleAttrValueList": [
+                    {
+                        "id": 1,
+                        "spuId": 1,
+                        "baseSaleAttrId": 2,
+                        "saleAttrValueName": "64GB",
+                        "saleAttrName": "选择版本",
+                        "isChecked": "1"
+                    },
+                    {
+                        "id": 2,
+                        "spuId": 1,
+                        "baseSaleAttrId": 2,
+                        "saleAttrValueName": "128GB",
+                        "saleAttrName": "选择版本",
+                        "isChecked": "0"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "spuId": 1,
+                "baseSaleAttrId": 3,
+                "saleAttrName": "选择套装",
+                "spuSaleAttrValueList": [
+                    {
+                        "id": 1,
+                        "spuId": 1,
+                        "baseSaleAttrId": 3,
+                        "saleAttrValueName": " 官方标配1",
+                        "saleAttrName": "选择套装",
+                        "isChecked": "1"
+                    },
+                    {
+                        "id": 2,
+                        "spuId": 1,
+                        "baseSaleAttrId": 3,
+                        "saleAttrValueName": " 官方标配2",
+                        "saleAttrName": "选择套装",
+                        "isChecked": "0"
+                    },
+                    {
+                        "id": 3,
+                        "spuId": 1,
+                        "baseSaleAttrId": 3,
+                        "saleAttrValueName": " 官方标配3",
+                        "saleAttrName": "选择套装",
+                        "isChecked": "0"
+                    }
+                ]
+            }
+        ],
+        "skuInfo": {
+            "id": 2,
+            "spuId": 1,
+            "price": 5499,
+            "skuName": "Apple iPhone 11 (A2223) 64GB 红色 移动联通电信双卡双待",
+            "skuDesc": "主体\n入网型号\nA2223\n品牌\n机身厚度（mm）\n8.3\n运营商标志或内容\n无",
+            "weight": "0.47",
+            "tmId": 1,
+            "category3Id": 61,
+            "skuDefaultImg": "/images/mobile06.png",
+            "isSale": 1,
+            "skuImageList": [
+                {
+                    "id": 1,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s1.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 2,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s2.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 3,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s3.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 4,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s1.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 5,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s2.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 6,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s3.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 7,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s1.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 8,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s2.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                },
+                {
+                    "id": 9,
+                    "skuId": 2,
+                    "imgName": "63e862164165f483.jpg",
+                    "imgUrl": "/images/s3.png",
+                    "spuImgId": 2,
+                    "isDefault": "0"
+                }
+            ],
+            "skuAttrValueList": [
+                {
+                    "id": 6,
+                    "attrId": 1,
+                    "valueId": 6,
+                    "skuId": 2
+                }
+            ],
+            "skuSaleAttrValueList": null
+        }
+    },
+    "ok": true
+}

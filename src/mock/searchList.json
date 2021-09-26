@@ -1,0 +1,263 @@
+{
+    "code": 200,
+    "message": "成功",
+    "data": {
+        "trademarkList": [
+            {
+                "tmId": 1,
+                "tmName": "苹果"
+            },
+            {
+                "tmId": 2,
+                "tmName": "小米"
+            },
+            {
+                "tmId": 3,
+                "tmName": "oppo"
+            },
+            {
+                "tmId": 4,
+                "tmName": "红米"
+            },
+            {
+                "tmId": 5,
+                "tmName": "三星"
+            }
+        ],
+        "attrsList": [
+            {
+                "attrId": 1,
+                "attrValueList": [
+                    "0-1000",
+                    "1000-2000",
+                    "2000-3000",
+                    "3000-4000",
+                    "4000-5000",
+                    "5000-6000",
+                    "6000-7000",
+                    "7000-8000",
+                    "8000-9000"
+                ],
+                "attrName": "价格"
+            },
+            {
+                "attrId": 2,
+                "attrValueList": [
+                    "手机壳",
+                    "数据线",
+                    "创意配件",
+                    "充电器"
+                ],
+                "attrName": "手机配件"
+            },
+            {
+                "attrId": 3,
+                "attrValueList": [
+                    "儿童",
+                    "青年",
+                    "成年人",
+                    "老人"
+                ],
+                "attrName": "适用人群"
+            },
+            {
+                "attrId": 4,
+                "attrValueList": [
+                    "800万以下",
+                    "800-1199万",
+                    "1200-1599万",
+                    "1600万以上"
+                ],
+                "attrName": "摄像头像素"
+            },
+            {
+                "attrId": 5,
+                "attrValueList": [
+                    "2G",
+                    "3G",
+                    "4G",
+                    "5G",
+                    "6G"
+                ],
+                "attrName": "网络制式"
+            }
+        ],
+        "goodsList": [
+            {
+                "id": 1,
+                "defaultImg": "/images/mobile01.png",
+                "title": "Apple iPhone 11 (A2223)",
+                "price": 1111,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 2,
+                "defaultImg": "/images/mobile02.png",
+                "title": "Apple iPhone 12 (A2223)",
+                "price": 2222,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 3,
+                "defaultImg": "/images/mobile03.png",
+                "title": "Apple iPhone 13 (A2223)",
+                "price": 3333,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 4,
+                "defaultImg": "/images/mobile04.png",
+                "title": "Apple iPhone 14 (A2223)",
+                "price": 4444,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 5,
+                "defaultImg": "/images/mobile05.png",
+                "title": "Apple iPhone 15 (A2223)",
+                "price": 5555,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 6,
+                "defaultImg": "/images/mobile06.png",
+                "title": "Apple iPhone 16 (A2223)",
+                "price": 6666,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 7,
+                "defaultImg": "/images/mobile06.png",
+                "title": "Apple iPhone 17 (A2223)",
+                "price": 7777,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 8,
+                "defaultImg": "/images/mobile06.png",
+                "title": "Apple iPhone 18 (A2223)",
+                "price": 8888,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 9,
+                "defaultImg": "/images/mobile06.png",
+                "title": "Apple iPhone 19 (A2223)",
+                "price": 9999,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            },
+            {
+                "id": 10,
+                "defaultImg": "/images/mobile06.png",
+                "title": "Apple iPhone 20 (A2223)",
+                "price": 10000,
+                "createTime": null,
+                "tmId": null,
+                "tmName": null,
+                "category1Id": null,
+                "category1Name": null,
+                "category2Id": null,
+                "category2Name": null,
+                "category3Id": null,
+                "category3Name": null,
+                "hotScore": 0,
+                "attrs": null
+            }
+        ],
+        "total": 100,
+        "pageSize": 2,
+        "pageNo": 1,
+        "totalPages": 4
+    },
+    "ok": true
+}
